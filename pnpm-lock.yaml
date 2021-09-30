@@ -8,6 +8,7 @@ specifiers:
   husky: ^7.0.2
   marked: ^3.0.4
   next: 11.1.2
+  next-secure-headers: ^2.2.0
   postcss: ^8.3.8
   react: 17.0.2
   react-dom: 17.0.2
@@ -27,6 +28,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-next: 11.1.2_eslint@7.32.0+next@11.1.2
   husky: 7.0.2
+  next-secure-headers: 2.2.0
   postcss: 8.3.8
   tailwindcss: 2.2.16_d90402d1bb3b165c9c83046beac13a8b
 
@@ -2230,6 +2232,11 @@ packages:
 
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
+    dev: true
+
+  /next-secure-headers/2.2.0:
+    resolution: {integrity: sha512-C7OfZ9JdSJyYMz2ZBMI/WwNbt0qNjlFWX9afUp8nEUzbz6ez3JbeopdyxSZJZJAzVLIAfyk6n73rFpd4e22jRg==}
+    engines: {node: '>=10.0.0'}
     dev: true
 
   /next/11.1.2_react-dom@17.0.2+react@17.0.2:
