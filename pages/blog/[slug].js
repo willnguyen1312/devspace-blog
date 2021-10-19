@@ -8,6 +8,8 @@ import Image from "next/image";
 import Layout from "@/components/Layout";
 import CategoryLabel from "@/components/CategoryLabel";
 
+const url = "https://devspace-blog-cool.vercel.app";
+
 export default function PostPage({
   frontmatter: { title, category, date, cover_image, author, author_image },
   content,
@@ -24,7 +26,7 @@ export default function PostPage({
           description: `Great description: ${title}`,
           images: [
             {
-              url: cover_image,
+              url: `${url}/${cover_image}`,
               width: 800,
               height: 600,
               alt: title,

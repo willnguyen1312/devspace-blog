@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import { DefaultSeo } from "next-seo";
 
+const url = "https://devspace-blog-cool.vercel.app";
+
 const config = {
   title: "Welcome to DevSpace",
   titleTemplate: "%s - DevSpace Blog",
@@ -14,7 +16,7 @@ const config = {
     site_name: "DevSpace Blog",
     images: [
       {
-        url: "/card.png",
+        url: `${url}/card.png`,
         width: 800,
         height: 600,
         alt: "DevSpace Blog",
