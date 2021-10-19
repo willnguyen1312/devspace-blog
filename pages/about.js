@@ -1,8 +1,13 @@
 import Layout from "@/components/Layout";
+import { NextSeo } from "next-seo";
 
 export default function AboutPage() {
   return (
-    <Layout title="About DevSpace">
+    <Layout>
+      <NextSeo
+        title="About DevSpace"
+        description="About DevSpace Page Description xD"
+      />
       <h1 className="text-5xl border-b-4 pb-5 font-bold">About</h1>
 
       <div className="bg-white shadow-md rounded-lg px-10 py-6 mt-6">

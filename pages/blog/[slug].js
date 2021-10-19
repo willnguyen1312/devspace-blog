@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { NextSeo } from "next-seo";
 import matter from "gray-matter";
 import marked from "marked";
 import Link from "next/link";
@@ -13,7 +14,24 @@ export default function PostPage({
   slug,
 }) {
   return (
-    <Layout title={title}>
+    <Layout>
+      <NextSeo
+        title={title}
+        description={`Great description: ${title}`}
+        openGraph={{
+          type: "website",
+          title: title,
+          description: `Great description: ${title}`,
+          images: [
+            {
+              url: cover_image,
+              width: 800,
+              height: 600,
+              alt: title,
+            },
+          ],
+        }}
+      />
       <Link href="/blog">Go Back</Link>
       <div className="w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6">
         <div className="flex justify-between items-center mt-4">

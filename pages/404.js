@@ -1,10 +1,11 @@
-import Link from "next/link";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Layout from "@/components/Layout";
 
 export default function NotFoundPage() {
   return (
-    <Layout title="Page Not Found">
+    <Layout>
+      <NextSeo title="Not Found" description="Not Found Page Description xD" />
       <div className="flex flex-col items-center mt-20">
         <Image
           alt="Whoops!"
