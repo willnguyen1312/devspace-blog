@@ -26,7 +26,7 @@ export default function PostPage({
           description: `Great description: ${title}`,
           images: [
             {
-              url: `${url}/${cover_image}`,
+              url: `${url}${cover_image}`,
               width: 800,
               height: 600,
               alt: title,
