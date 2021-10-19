@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { DefaultSeo } from "next-seo";
 
+// https://github.com/garmeeh/next-seo/issues/14#issuecomment-503715239
 const url = "https://devspace-blog-cool.vercel.app";
 
 const config = {
